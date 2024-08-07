@@ -1,0 +1,10 @@
+go get -u github.com/99designs/gqlgen
+gqlgen init
+go run ./server.go
+
+
+go get github.com/99designs/gqlgen/graphql/handler/extension@v0.17.49
+go get github.com/99designs/gqlgen/graphql/handler/lru@v0.17.49
+go get github.com/99designs/gqlgen/graphql/handler/transport@v0.17.49
+
+gqlgen generate
